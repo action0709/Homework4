@@ -115,7 +115,7 @@ public class Main {
         float salaryCristinaYearDifference=salaryCristinaLater*12-salaryCristinaYearDo;
         System.out.println("Маша теперь получает "+salaryMariaLater+" рублей. Годовой доход вырос на "+salaryMariaYearDifference+" рублей.");
         System.out.println("Денис теперь получает "+salaryDenisLater+" рублей. Годовой доход вырос на "+salaryDenisYearDifference+" рублей.");
-        System.out.println("Кристина теперь получает "+salaryCristinaLater+" рублей. Годовой доход вырос на "+salaryCristinaYearDifference+" рублей.");
+        System.out.println("Кристина теперь получает "+salaryCristinaLater+" рублей. Годовой доход вырос на  "+salaryCristinaYearDifference+" рублей.");
     }
 
 }
