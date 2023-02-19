@@ -4,6 +4,10 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1 () {
@@ -61,4 +65,57 @@ public class Main {
         System.out.println("За 1 месяц машина произвела "+productionMachineMonth+" штук бутылок.");
 
     }
+    public static void task5 (){
+        System.out.println("Задача 5");
+        // Пишем код для задачи 5
+        byte canPaintAll=120;
+        byte canPaintClassWhite=2;
+        byte canPaintClassBraun=4;
+        int ClassSchool=canPaintAll/(canPaintClassWhite+canPaintClassBraun);
+       int canPaintWhiteSchool=ClassSchool*canPaintClassWhite;
+        int canPaintBraunSchool=ClassSchool*canPaintClassBraun;
+        System.out.println("В школе, где "+ClassSchool+" классов, нужно "+canPaintWhiteSchool+" банок белой краски и "+canPaintBraunSchool+" банок коричневой краски.");
+    }
+    public static void task6 (){
+        System.out.println("Задача 6");
+        // Пишем код для задачи 6
+        byte weightBananaGramm=80;
+        byte weightMilk100ml=105;
+        byte weightIceCream=100;
+        byte weightЕgg=70;
+        int ProteinCoctailsGramm=weightBananaGramm*5+weightMilk100ml*2+weightIceCream*2+weightЕgg*4;
+        float ProteinCoctailsKg=ProteinCoctailsGramm/1000F;
+        System.out.println("Спортзавтрак весит "+ProteinCoctailsGramm+" грамм.");
+        System.out.println("Спортзавтрак весит "+ProteinCoctailsKg+" кг.");
+    }
+    public static void task7 (){
+        System.out.println("Задача 7");
+        // Пишем код для задачи 7
+        short loseWeightGramm=7000;
+        int Days250Gr=loseWeightGramm/250;
+        int Days500Gr=loseWeightGramm/500;
+
+        System.out.println("Если спортсмен будеть терять 250 гр. в день, то потребуется "+Days250Gr+" дней.");
+        System.out.println("Если спортсмен будеть терять 500 гр. в день, то потребуется "+Days500Gr+" дней.");
+    }
+    public static void task8 (){
+        System.out.println("Задача 8");
+        // Пишем код для задачи 8
+        int salaryMaria=67760;
+        int salaryDenis=83690;
+        int salaryCristina=76230;
+        int salaryMariaYearDo=salaryMaria*12;
+        int salaryDenisYearDo=salaryDenis*12;
+        int salaryCristinaYearDo=salaryCristina*12;
+        float salaryMariaLater=salaryMaria*1.10F;
+        float salaryDenisLater=salaryDenis*1.10F;
+        float salaryCristinaLater=salaryCristina*1.10F;
+        float salaryMariaYearDifference=salaryMariaLater*12-salaryMariaYearDo;
+        float salaryDenisYearDifference=salaryDenisLater*12-salaryDenisYearDo;
+        float salaryCristinaYearDifference=salaryCristinaLater*12-salaryCristinaYearDo;
+        System.out.println("Маша теперь получает "+salaryMariaLater+" рублей. Годовой доход вырос на "+salaryMariaYearDifference+" рублей.");
+        System.out.println("Денис теперь получает "+salaryDenisLater+" рублей. Годовой доход вырос на "+salaryDenisYearDifference+" рублей.");
+        System.out.println("Кристина теперь получает "+salaryCristinaLater+" рублей. Годовой доход вырос на "+salaryCristinaYearDifference+" рублей.");
+    }
+
 }
